@@ -25,3 +25,9 @@ outputs:
 runs:
   using: "docker"
   image: "Dockerfile"
+  args:
+    - ${{ inputs.find }}
+    - ${{ inputs.replace }}
+    - ${{ inputs.regex }}
+    - ${{ inputs.include }}
+    - ${{ inputs.exclude }}
